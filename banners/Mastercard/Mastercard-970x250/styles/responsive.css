@@ -1,0 +1,91 @@
+/*********** RESPONSIVE MEDIA QUERIES *********
+
+/* 970x250 */
+/**START* Automatically inserted from media query: "screen and (min-width: 960px) and (max-width: 980px) and (min-height: 240px) and (max-height: 260px)" */
+.copy-container {
+  left: 5px;
+  top: 39px;
+  margin-left: 33px;
+}
+#copy_container2 {
+  top: 19px;
+}
+#headline2 {
+  margin-top: 57px;
+}
+.copy-headline {
+  font-size: 31.2px;
+  line-height: 1.25;
+  width: ;
+}
+.copy-headline span {
+  overflow: hidden;
+  /* position: relative; */
+  line-height: 1;
+}
+.cta {
+  border-radius: 20px;
+  margin-top: 18px;
+  padding: 7.5px;
+  width: 20%;
+  font-size: 14px;
+  margin-left: 2px;
+  color: #fff;
+  transform-origin: 100px 14px;
+}
+#legal {
+  margin: 23px;
+  width: 49%;
+  font-size: 9.8px;
+  bottom: 14px;
+  right: 1px;
+  text-align: left;
+}
+.copy {
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.character {
+  opacity: 0
+}
+#copy3 span {
+  position: relative;
+  overflow: hidden;
+}
+.color {
+  color: #e05b1e;
+  font-family: 'MarkOffcForMC-Medium';
+  display: inline-block;
+}
+#suffle_Txt {
+  position: absolute;
+  display: block;
+  color: #e05b1e;
+  font-family: 'MarkOffcForMC-Medium';
+}
+#handHolder {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  left: 120px;
+  top: auto;
+  bottom: 15px;
+}
+.hand {
+  width: 100%;
+  height: auto;
+}
+#hand_spark {
+  transform-origin: 12px 12px;
+}
+.img-logo {
+  width: 213px;
+  margin-top: 91px;
+  left: 2px;
+}
+/**END* Automatically inserted from media query: "screen and (min-width: 960px) and (max-width: 980px) and (min-height: 240px) and (max-height: 260px)" */
+body {
+  width: 970px;
+  height: 250px;
+}

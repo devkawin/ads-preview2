@@ -1,0 +1,245 @@
+.frameContainer {
+  display: flex;
+  justify-content: center;
+}
+
+
+#mainContainer.x300x600 #framesLogo {
+  width: 125px;
+  height: auto;
+  top: 31px;
+}
+
+#mainContainer.x300x600 .frameContainer #window {
+  position: relative;
+  width: 256px;
+  height: 230px;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+#mainContainer.x300x600 .copy{
+  padding-top: 66px;
+  line-height: 1.18;
+}
+
+#mainContainer.x300x600 .miniCopy {
+  
+  font-size: 15px;
+  
+}
+#mainContainer.x300x600 .frameBg{
+  width: auto;
+  height: 100%;
+  position: absolute;
+}
+
+
+
+
+
+
+#mainContainer.x300x600 #ctaHolder{
+  top:193px;
+}
+.some-page-wrapper {
+display: flex;
+flex-wrap: wrap;
+width: auto;
+row-gap: 8px;
+  /* gap: 10px; */
+}
+
+.row {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 100%;
+column-gap: 10px;
+
+}
+
+.column {
+display: flex;
+flex-direction: column;
+flex-basis: 100%;
+flex: 1;
+}
+
+
+.column img{
+width: 100%
+}
+
+
+
+
+
+#att1{
+  width: 58px;
+  height: auto;
+  top: 203px;
+  left: 151px;
+  position: absolute;
+  z-index: 10;
+  
+}
+
+#att2{
+  width: 83px;
+  height: auto;
+  top: 179px;
+  left: 151px;
+  position: absolute;
+  z-index: 10;
+  
+}
+
+#att3{
+  width: 55px;
+  height: auto;
+  top: 193px;
+  left: 151px;
+  position: absolute;
+  z-index: 10;
+  
+}
+
+#spriteContainer1{
+  position: absolute;
+  display: block;
+  top: 211px;
+  left: 198px;
+  
+  width: 0px;
+  height: 54px;
+  overflow: hidden;
+  background: url(assets/att1-sprite.jpg);
+  background-size: cover;
+  z-index: 10;
+  
+  }
+  #spriteContainer2{
+    position: absolute;
+    display: block;
+    top: 163px;
+    left: 233px;
+    width: 71px;
+    height: 143px;
+    overflow: hidden;
+    background: url(assets/att2-sprite.jpg);
+    background-size: cover;
+    z-index: 10;
+    
+    }
+
+    #spriteContainer3{
+      position: absolute;
+      display: block;
+      top: 159px;
+      right: 8px;
+      width: 94px;
+      height: 165px;
+      overflow: hidden;
+      background: url(assets/att3-sprite.jpg);
+      background-size: cover;
+      z-index: 10;
+      }
+
+  #minifc{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+
+  #spritedemo{
+    width: auto;
+    height: 165px;
+    position: absolute;
+    top: 158px;
+    right: 6px;
+    z-index: 10;
+  }
+
+  #corrector{
+    display: block;
+    width: 3px;
+    height: 165px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 154px;
+    left: 196px;
+    z-index: 10;
+  }
+  #corrector2{
+    width: 61px;
+    height: 14px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 163px;
+    left: 233px;
+    z-index: 10;
+    transform: rotate(-12deg);
+  }
+  #corrector3 {
+    width: 61px;
+    height: 14px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 299px;
+    left: 233px;
+    z-index: 10;
+    transform: rotate(12deg);
+}
+  #corrector4{
+    width: 94px;
+    height: 21px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 184px;
+    left: 202px;
+    z-index: 10;
+  }
+  #corrector5{
+    width: 94px;
+    height: 21px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 274px;
+    left: 202px;
+    z-index: 10;
+  }
+  #corrector6{
+  
+    width: 44px;
+    height: 14px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 183px;
+    left: 160px;
+    z-index: 10;
+  }
+  #corrector7 {
+    width: 45px;
+    height: 19px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 279px;
+    left: 160px;
+    z-index: 10;
+}
+  label{
+    cursor: inherit;
+  }
+
+  .copy sup {
+    font-size: .6em;
+    line-height: 1.1em;
+    vertical-align: top;
+    position: relative;
+  
+  }
+
+  #mainContainer.x300x600 #copy4{
+    font-size: 25px;
+  }

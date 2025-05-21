@@ -1,0 +1,401 @@
+@charset "UTF-8";
+/* CSS Document Common Elements */
+body {
+  position: absolute;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  background: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  /*background-color: transparent;*/
+  /* below improves consistancey of font rendering across browsers */
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  /* below stops FireFox rendering copy too heavily */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix to stop Mobile Safari automatically scaling text - http://bit.ly/1mumu5F */
+/* *START* Automatically inserted from media query: "screen and (max-device-width: 480px)" */
+body {
+  -webkit-text-size-adjust: none;
+}
+/* *END* Automatically inserted from media query: "screen and (max-device-width: 480px)" */
+
+/* Browser Support: Chrome:5+, Safari:5.1+, Firefox:3.6+, Opera:11.5+, IE:9+, Android:4.4+, iOS:5.1+ */
+@font-face {
+  font-family: 'Degular_Bold';
+  src: url('../fonts/Degular_Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular_Semibold';
+  src: url('../fonts/Degular_Semibold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TCCC-UnityText-Regular";
+  src: url("../fonts/TCCC-UnityText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+br {
+  line-height: 0;
+  display: none;
+  display: inline;
+}
+
+#container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  display: none;
+  color: #ffffff;
+  background-color: #000000;
+  font-family: 'Degular_Semibold';
+}
+
+.abs {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.rel {
+  position: relative;
+  left: 0px;
+  top: 0px;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+#exit_btn {
+  cursor: pointer;
+  z-index: 400;
+  background-color: #FFFFFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+#keyline {
+  z-index: 399;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid #000000;
+  background-color: transparent;
+  opacity: 0;
+}
+
+/*********** POSITIONING **********/
+.center {
+  position: relative;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.vcenter {
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+
+#imgContainer {
+  top: 104px;
+  width: 60%;
+  height: 41%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.imgs {
+  width: 100%;
+  height: auto;
+}
+
+.copyContainers {
+  width: 51.5%;
+  height: auto;
+  left: auto;
+  right: 0;
+  bottom: 3%;
+  top: 0;
+  margin: auto;
+  height: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.copies {
+  display: inline-block;
+}
+
+#frame1Copy,
+#frame1CopyLine1 {
+  font-size: 30px;
+  line-height: 1;
+}
+
+#frame1CopyLine1 span,
+#frame1Copy span,
+#frame2Copy span,
+#frame2Copy spans {
+  position: relative;
+  display: inline-block;
+}
+
+/* #frame2Copy {
+    font-size: 70px;
+    line-height: 0.75;
+    top: 40%;
+    position: relative;
+}
+
+#frame2Copy spans {
+    font-size: 26px;
+} */
+#frame3Copy {
+  font-size: 39px;
+  line-height: 1;
+  transform-origin: center;
+  white-space: pre;
+  left: 126px;
+  letter-spacing: 0.4px;
+  top: 165px;
+  color: #ffffff;
+}
+
+#tcCopy {
+  position: absolute;
+  top: auto;
+  bottom: 5px;
+  color: #000;
+  font-size: 8px;
+  width: 100%;
+}
+
+.copy1,
+.copy2 {
+  font-size: 107px;
+  letter-spacing: 0px;
+  display: block;
+  opacity: 1;
+  overflow: hidden;
+  padding: 0.5% 0 0 4%;
+  height: 125px !important;
+  display: flex;
+  width: 100%;
+}
+
+.copy1 {
+  padding: 0.3% 0 0 3%;
+}
+
+#frame1CopyContainer,
+#frame2CopyContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 51.5%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+  left: auto;
+  height: 92%;
+  /* background: #000000; */
+  color: #0f8cf0;
+  opacity: 1;
+}
+
+frame1CopyContainer {
+  height: 97%;
+}
+
+.copyContainers span {
+  display: inline-block;
+  position: relative;
+  min-width: 3px;
+  line-height: 1;
+  margin: 0px -0.7px 0px 0px;
+}
+
+#modelImg1Container {
+  z-index: 1;
+}
+
+#modelImg2Container {
+  opacity: 0;
+}
+
+/* #modelImg1 {
+    top: 7px;
+    width: 498px;
+    left: -7px;
+} */
+
+#modelImg2 {
+  transform: scale(0.59) translate(-496px, -143px);
+}
+
+.modelImgContainers {
+  width: 100%;
+  height: 100%;
+  right: 0;
+  left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.modelImgs {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 40%;
+}
+
+#logoContainer {
+  width: 41%;
+  height: 93.5%;
+  top: 68px;
+  left: 515px;
+  overflow: visible;
+  z-index: 2;
+}
+
+.logos {
+  width: 103%;
+  height: auto;
+}
+
+#logoBottom {
+  top: auto;
+}
+
+.logoBg {
+  width: 100%;
+  height: 25%;
+  background: #000000;
+}
+
+#logoTopBg {
+  top: 250px;
+}
+
+
+
+#logoBottomBg {
+  bottom: 0;
+  top: auto;
+  right: 0;
+  width: 58%;
+  left: auto;
+}
+
+#thickBorder {
+  width: 100%;
+  height: 100%;
+  border: 10px solid #000000;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#frame3Copy>span>span:first-child {
+  font-family: 'Degular_Bold';
+}
+
+#frame3Copy>span>span {
+  margin-right: 3%;
+}
+
+#copy1line2parent,
+#copy2line2parent {
+  top: -11%;
+  position: relative;
+}
+
+#frame1CopyContainer {
+  background: #000000;
+}
+
+#frame3CopyContainer {
+  height: 100%;
+}
+
+#modelImg1Gradient {
+  width: 5%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(0 0 0));
+}
+
+#logoTopBgGradient {
+  width: 8%;
+  height: 100%;
+  right: -8%;
+  top: 0;
+  background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(0 0 0));
+  left: auto;
+}
+#logoBottomBgGradient {
+  width: 8%;
+  height: 100%;
+  left: -8%;
+  top: 0;
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(0 0 0));
+}
+#legal {
+  bottom: 5px;
+  right: 0px;
+  left: 0;
+  color: #ffffff;
+  font-family: "TCCC-UnityText-Regular";
+  font-size: 8px;
+  line-height: 1;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+  top: unset;
+}
+body {
+  width: 300px;
+  height: 250px;
+}

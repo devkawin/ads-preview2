@@ -1,0 +1,337 @@
+@charset "UTF-8";
+/* CSS Document Common Elements */
+
+body {
+  font-family: 'Archivo-Bold';
+  position: absolute;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  background: #FFFFFF;
+  width: 100%;
+  height: 100%;
+}
+
+/* *START* Automatically inserted from media query: "screen and (max-device-width: 480px)" */
+
+body {
+  -webkit-text-size-adjust: none;
+}
+
+/* *END* Automatically inserted from media query: "screen and (max-device-width: 480px)" */
+
+@font-face {
+  font-family: 'Archivo-Bold';
+  src: url('../fonts/Archivo-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Archivo-Regular';
+  src: url('../fonts/Archivo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Archivo-ExtraBold';
+  src: url('../fonts/Archivo-ExtraBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+video::-webkit-media-controls {
+  display: none;
+}
+
+#container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+  opacity: 1;
+  background-color: #021f42;
+}
+
+.abs {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.rel {
+  position: relative;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.full-w {
+  width: 100%;
+}
+
+.contain-content {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+.hidden {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.exit_btn {
+  cursor: pointer;
+  z-index: 400;
+  background-color: #FFFFFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+#keyline {
+  z-index: 399;
+  border: 1px solid #666666;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+/*********** POSITIONING **********/
+
+.center-ele {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center-ele-bottom {
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  transform: translate(-50%, -100%);
+}
+
+.horiz-center-ele {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.vert-center-ele {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/*********** ELEMENTS **********/
+
+#background {
+  width: 100%;
+  height: auto;
+}
+
+/* #background {
+    height: 500%;
+} */
+
+#logo {
+  width: 99px;
+  height: auto;
+  top: 66px;
+  left: 23px;
+  z-index: 1;
+}
+
+#arch {
+  width: 66px;
+  height: auto;
+  top: 42px;
+  left: 39px;
+
+}
+
+.mainCopy-holder {
+  left: 20px;
+  top: 148px;
+  width: 100%;
+}
+
+.mainCopy-holder1 {
+  left: 20px;
+  top: 148px;
+  width: 100%;
+}
+
+.mainCopy {
+  font-size: 62px;
+  font-family: 'Archivo-ExtraBold';
+  text-align: left;
+  letter-spacing: -1px;
+  color: #022043;
+  padding-bottom: 10%;
+  line-height: .85;
+}
+.mainCopy .lines {
+  opacity: 0
+}
+#mainCopy0 .line0 {
+  opacity: 1
+}
+#mainCopy1 .line1 {
+  opacity: 1
+}
+#mainCopy2 .line2 {
+  opacity: 1
+}
+#mainCopy3 .line3 {
+  opacity: 1
+}
+#mainCopy4 .line4 {
+  opacity: 1
+}
+#mainCopy5 .line5 {
+  opacity: 1
+}
+#mainCopy6 .line6 {
+  opacity: 1
+}
+#mainCopy7 .line7 {
+  opacity: 1
+}
+#mainCopy8 .line8 {
+  opacity: 1
+}
+#mainCopy9 .line9 {
+  opacity: 1
+}
+#mainCopy10 .line10 {
+  opacity: 1
+}
+/* .lines{
+    background: linear-gradient(60deg, #00D639 0%, #00D6DE 40%, #9D60FF 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+} */
+
+.sub-copy {
+  font-family: 'Archivo-Regular';
+  font-size: 17px;
+  line-height: 17px;
+  text-align: left;
+  top: auto;
+  bottom: 118px;
+  left: 22px;
+  color: #ffffff;
+}
+
+.gradient {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  background: #000;
+  mix-blend-mode: lighten;
+  height: 500%;
+  overflow: hidden;
+  transition: height 3s ease;
+}
+
+
+
+
+
+/* Keyframes for moving the gradient  */
+@keyframes moveGradient {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+#cta-position {
+  position: absolute;
+  bottom: 42px;
+  left: 21px;
+  height: auto;
+  color: #ffffff;
+}
+
+#cta-container {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  padding: 6px 20px 6px;
+  height: auto;
+  border-style: solid;
+  /* border-color: #ef8903; */
+  border-width: 1px;
+  display: inline-block;
+  transition: background-color .5s cubic-bezier(.2, 0, .05, 1), color .5s cubic-bezier(.2, 0, .05, 1);
+  text-align: center;
+}
+
+#cta {
+  position: relative;
+  left: auto;
+  bottom: auto;
+  top: auto;
+  right: auto;
+  padding: 0;
+  height: auto;
+  border-style: none;
+  border-width: 0px;
+  font-family: 'Archivo-Regular';
+}
+
+.copy-cta {
+  position: relative;
+  left: auto;
+  bottom: auto;
+  top: auto;
+  right: auto;
+  padding: 0;
+  height: auto;
+  border-style: none;
+  border-width: 0px;
+}
+
+.gradiant {
+
+  .mainCopy {
+    color: #ffffff;
+    background: linear-gradient(0deg, #FD9A3F 0%, #E9D0F0 60%, #076ABF 99%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+}
+
+body {
+  width: 300px;
+  height: 600px;
+}
